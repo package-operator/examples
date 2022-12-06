@@ -1,6 +1,6 @@
 apiVersion: package-operator.run/v1alpha1
-kind: Package
+kind: ClusterPackage
 metadata:
-  name: my-nginx
+  name: example-operator
 spec:
   image: <your-image-url-goes-here>
