@@ -1,2 +1,3 @@
-# examples
-Package Operator examples used as part of the documentation.
+# Examples for Package Operator
+
+These examples are used as part of our Guide on [package-operator.run](http://package-operator.run/).

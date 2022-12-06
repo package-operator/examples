@@ -1,0 +1,6 @@
+apiVersion: package-operator.run/v1alpha1
+kind: Package
+metadata:
+  name: other-nginx
+spec:
+  image: quay.io/nschiede/nginx:pkg-v20
