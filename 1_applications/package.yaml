@@ -3,4 +3,11 @@ kind: Package
 metadata:
   name: my-nginx
 spec:
-  image: <your-image-url-goes-here>
+  # Image specifies when the package that shall be installed
+  # is found at.
+  image: <your-package-url-goes-here>
+  config:
+    # Configure which image the installed package uses to run nginx.
+    # this does nothing with the non templated 1_start example,
+    # in 2_templates it overrides the default "nginx:latest".
+    nginxImage: "nginx:1.23.3"
