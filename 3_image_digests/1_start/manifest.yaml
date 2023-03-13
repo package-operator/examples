@@ -1,0 +1,26 @@
+apiVersion: manifests.package-operator.run/v1alpha1
+kind: PackageManifest
+metadata:
+  name: nginx
+spec:
+  scopes:
+  - Namespaced
+  phases:
+  - name: deploy
+  availabilityProbes:
+  - probes:
+    - condition:
+        type: Available
+        status: "True"
+    - fieldsEqual:
+        fieldA: .status.updatedReplicas
+        fieldB: .status.replicas
+    selector:
+      kind:
+        group: apps
+        kind: Deployment
+  images:
+  - name: webserver
+    image: nginx:1.23.3
+  - name: base
+    image: registry.access.redhat.com/ubi9/ubi-minimal:9.1
