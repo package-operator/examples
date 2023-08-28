@@ -26,8 +26,6 @@ spec:
           description: nginxImage is the reference to the image containing nginx.
           type: string
           default: "nginx:latest"
-      required:
-      - nginxImage
       type: object
 test:
   template:

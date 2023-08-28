@@ -21,8 +21,8 @@ spec:
     spec:
       containers:
         - name: nginx
-          # manifest.yaml defaults the image to "nginx:latest", 
+          # manifest.yaml defaults the image to "nginx:latest",
           # can be overridden in Package spec.
-          image: "{{.config.nginxImage}}"
+          image: {{.config.nginxImage | quote }}
           ports:
             - containerPort: 80
