@@ -2,7 +2,7 @@
 apiVersion: manifests.package-operator.run/v1alpha1
 kind: Repository
 metadata:
-  creationTimestamp: "2023-12-06T15:49:51Z"
+  creationTimestamp: "2023-12-06T18:10:01Z"
   name: my-repo
 ---
 apiVersion: manifests.package-operator.run/v1alpha1

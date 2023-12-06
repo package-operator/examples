@@ -16,8 +16,8 @@ spec:
       range: 4.11.x
   dependencies:
   - image:
-      name: my-pkg
-      package: my-pkg.my-repo
-      # range: '>=2.1'
+      name: pkg-a
+      package: pkg-a.my-repo
+      # range: '0-1'
   repositories:
-  - image: quay.io/package-operator/my-repo:latest
+  - file: repo.yaml
