@@ -1,0 +1,18 @@
+apiVersion: manifests.package-operator.run/v1alpha1
+kind: PackageManifest
+metadata:
+  name: pkg-a
+  annotations:
+    version: v0.1.0
+spec:
+  scopes:
+  - Cluster
+  - Namespaced
+  phases:
+  - name: deploy
+  constraints:
+  - platform:
+    - OpenShift
+  - platformVersion:
+      name: OpenShift
+      range: 4.11.x
