@@ -1,0 +1,23 @@
+apiVersion: manifests.package-operator.run/v1alpha1
+kind: PackageManifest
+metadata:
+  name: root
+spec:
+  scopes:
+  - Cluster
+  - Namespaced
+  phases:
+  - name: deploy
+  constraints:
+  - platform:
+    - OpenShift
+  - platformVersion:
+      name: OpenShift
+      range: 4.11.x
+  dependencies:
+  - image:
+      name: my-pkg
+      package: my-pkg.my-repo
+      # range: '>=2.1'
+  repositories:
+  - image: quay.io/package-operator/my-repo:latest
