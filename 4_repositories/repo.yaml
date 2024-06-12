@@ -12,7 +12,7 @@ data:
     - OpenShift
   - platformVersion:
       name: OpenShift
-      range: 4.11.x
+      range: '~4.11'
   digest: 9f62412e643b6e3a8a2b3997e955062af3813dfe2aa577a01f724daa1033cd98
   image: quay.io/nschiede/pkg-a
   name: pkg-a
@@ -48,7 +48,7 @@ data:
     - OpenShift
   - platformVersion:
       name: OpenShift
-      range: 4.15.x
+      range: '~4.15'
   digest: 1f1347f666c05a769548d8e16e5c92a3304ce7603f67f0e3a2801d1f4d102c5b
   image: quay.io/nschiede/pkg-a
   name: pkg-a

@@ -15,4 +15,4 @@ spec:
     - OpenShift
   - platformVersion:
       name: OpenShift
-      range: 4.11.x
+      range: '~4.11.x'

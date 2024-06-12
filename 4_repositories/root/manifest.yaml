@@ -13,7 +13,10 @@ spec:
     - OpenShift
   - platformVersion:
       name: OpenShift
-      range: 4.11.x
+      # range: '>=4.12,<4.13'
+      range: '~4.13'
+      # range: '~4.14' # 4.11.0 - 4.11.x
+      # range: '~4.12' # 4.12.0 - 4.12.x
   dependencies:
   - image:
       name: pkg-a
@@ -21,3 +24,7 @@ spec:
       # range: '0-1'
   repositories:
   - file: repo.yaml
+  # repository contains
+  # - pkg-a@0.1.0 [OpenShift ~4.11]
+  # - pkg-a@0.2.0 [OpenShift 4.12.x - 4.14.x && != 4.13.5]
+  # - pkg-a@0.3.0 [OpenShift ~4.15]
