@@ -1,0 +1,8 @@
+# This files inclusion is determined by a glob specified in the PackageManifest.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: filter-via-glob
+  annotations:
+    package-operator.run/phase: deploy
+    test: {{.config.banana}}
