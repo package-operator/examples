@@ -1,0 +1,23 @@
+apiVersion: manifests.package-operator.run/v1alpha1
+kind: PackageManifest
+metadata:
+  name: root
+spec:
+  scopes:
+  - Cluster
+  - Namespaced
+  phases:
+  - name: deploy
+  constraints:
+  - platform:
+    - OpenShift
+  - platformVersion:
+      name: OpenShift
+      range: 4.11.x
+  dependencies:
+  - image:
+      name: pkg-a
+      package: pkg-a.my-repo
+      # range: '0-1'
+  repositories:
+  - file: repo.yaml
