@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: filter-via-annotation
+  annotations:
+    package-operator.run/phase: deploy
+    # This annotation can contain a CEL expression controling if this object should be included or not.
+    # In this example we are referencing the named condition "config_banana_bread" from the PackageManifest.
+    package-operator.run/condition: cond.config_banana_bread

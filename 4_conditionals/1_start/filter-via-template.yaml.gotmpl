@@ -1,0 +1,8 @@
+{{ if eq .config.banana "bread" -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: filter-via-template
+  annotations:
+    package-operator.run/phase: deploy
+{{ end }}
