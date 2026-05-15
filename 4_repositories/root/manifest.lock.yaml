@@ -1,0 +1,11 @@
+apiVersion: manifests.package-operator.run/v1alpha1
+kind: PackageManifestLock
+metadata:
+  creationTimestamp: "2026-05-15T07:40:14Z"
+spec:
+  dependencies:
+  - digest: 037ff25265533a1f314e20ba8f4825836a9712443c04a6cdf4f741c09163f861
+    image: quay.io/nschiede/pkg-a
+    name: pkg-a
+    version: 0.2.0
+  images: []
