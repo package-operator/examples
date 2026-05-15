@@ -2,7 +2,7 @@
 apiVersion: manifests.package-operator.run/v1alpha1
 kind: Repository
 metadata:
-  creationTimestamp: "2023-12-06T18:10:01Z"
+  creationTimestamp: "2026-05-15T07:31:17Z"
   name: my-repo
 ---
 apiVersion: manifests.package-operator.run/v1alpha1
@@ -12,16 +12,15 @@ data:
     - OpenShift
   - platformVersion:
       name: OpenShift
-      range: '~4.11'
-  digest: 9f62412e643b6e3a8a2b3997e955062af3813dfe2aa577a01f724daa1033cd98
+      range: ~4.11.x
+  digest: ab985be7292e13b696eaabbd02606a0af810cc9c5ae8e74be7c88865c949d720
   image: quay.io/nschiede/pkg-a
   name: pkg-a
   versions:
   - v0.1.0
 kind: RepositoryEntry
 metadata:
-  creationTimestamp: null
-  name: pkg-a.9f62412e643b6e3a8a2b3997e955062af3813dfe2aa577a01f724daa1033cd98
+  name: pkg-a.ab985be7292e13b696eaabbd02606a0af810cc9c5ae8e74be7c88865c949d720
 ---
 apiVersion: manifests.package-operator.run/v1alpha1
 data:
@@ -38,7 +37,6 @@ data:
   - v0.2.0
 kind: RepositoryEntry
 metadata:
-  creationTimestamp: null
   name: pkg-a.037ff25265533a1f314e20ba8f4825836a9712443c04a6cdf4f741c09163f861
 ---
 apiVersion: manifests.package-operator.run/v1alpha1
@@ -48,13 +46,12 @@ data:
     - OpenShift
   - platformVersion:
       name: OpenShift
-      range: '~4.15'
-  digest: 1f1347f666c05a769548d8e16e5c92a3304ce7603f67f0e3a2801d1f4d102c5b
+      range: ~4.15.x
+  digest: f1a73f5657459822bd819ba91f15431d425f4bacd0f77946246ad25e22274a55
   image: quay.io/nschiede/pkg-a
   name: pkg-a
   versions:
   - v0.3.0
 kind: RepositoryEntry
 metadata:
-  creationTimestamp: null
-  name: pkg-a.1f1347f666c05a769548d8e16e5c92a3304ce7603f67f0e3a2801d1f4d102c5b
+  name: pkg-a.f1a73f5657459822bd819ba91f15431d425f4bacd0f77946246ad25e22274a55

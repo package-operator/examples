@@ -14,8 +14,10 @@ spec:
   - platformVersion:
       name: OpenShift
       # range: '>=4.12,<4.13'
-      range: '~4.13'
-      # range: '~4.14' # 4.11.0 - 4.11.x
+      # range: '=4.13.3'
+      # range: '=4.13.5' # no package supports this version
+      range: '4.13.0 - 4.13.4'
+      # range: '~4.11' # 4.11.0 - 4.11.x
       # range: '~4.12' # 4.12.0 - 4.12.x
   dependencies:
   - image:
